@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<Style>
+    .cont{
+        width: 100%;
+        border: 3px solid rgb(207, 13, 123);
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    .cont img{
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        left: 10px;
+        box-shadow: 5px 10px 2px;
+        border-radius: 15px;
+    }
+
+    @media (min-width:401px) and (max-width:768px){
+        .cont{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+
+    @media (max-width:400px){
+        .cont{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+
+</Style>
+<body>
+    <div class="pad">
+    <div class="cont">
+        <div>
+            <img src="img/1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/3.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/4.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/5.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/6.jpg" alt="">
+        </div>
+    </div>
+    </div>  
+</body>
+</html>

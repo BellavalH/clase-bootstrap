@@ -1,0 +1,141 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body data-bs-theme="dark">
+    <h1 class="bg-dark text-primary text-center p-3">INICIO REPASO DE INGRESO 2026-BOOTSTRAP</h1>
+    <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">BOOTSTRAP</h5>
+            <p class="card-text">perfecto para agregar elementos como cards, search, carousel, etc.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">ENLACE</h5>
+            <p class="card-text">podemos agregar contenido de bootstrap instalandolo por medio de la terminal(cdn) o por el link en el head</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html> -->
+
+<!-- ejercicio: Utilizando BootStrap - Insertar una barra de navegación lateral izquierda, 
+agregar los hipervínculos de Inicio y registro; en Registro deben agregar un formulario 
+de datos personales, con sus botones de registrar y cancelar. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <title>Repaso</title>
+</head>
+
+<body class="bg-black p-0">
+    <!-- barra de navegacion superior -->
+   <nav class="navbar bg-body-tertiary fixed p-0  ">
+    <div class="container-fluid bg-dark">
+        <a class="navbar-brand text-danger" href="#">MENU</a>
+        <!-- boton para acceder a la barra lateral -->
+        <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- barra lateral -->
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header bg-danger">
+            <h5 class="offcanvas-title text-black" id="offcanvasNavbarLabel">MENU</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link active text-secondary" aria-current="page" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="repaso.2.html">REGISTRO</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</nav>
+<!-- contenedor de title y cards -->
+ <!-- title -->
+<div class="inicio bg-black p-1">
+    <h1 class="bg-black text-danger text-center p-3 ">INICIO REPASO DE INGRESO 2026-BOOTSTRAP</h1>
+</div>
+
+<div class="container">
+    <div class="row"> <!-- row es columna horizontal -->
+        <div class="col"> 
+            <div class="card m-auto bg-danger" style="width: 18rem;">
+                <img src="img/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">funny cats pics</p>
+                </div>
+                </div>
+        </div>
+        <div class="col"> 
+            <div class="card m-auto bg-danger" style="width: 18rem;">
+                <img src="img/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">funny cats pics</p>
+                </div>
+                </div>
+        </div>
+        <div class="col"> 
+            <div class="card m-auto bg-danger" style="width: 18rem;">
+                <img src="img/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">funny cats pics</p>
+                </div>
+                </div>
+        </div>
+    </div>
+    <div class="row p-3"> 
+        <div class="col"> 
+            <div class="card m-auto bg-secondary" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="card-text">funny cats pics</p>
+                </div>
+                </div>
+        </div>
+        <div class="col"> 
+            <div class="card m-auto bg-secondary" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="card-text">funny cats pics</p>
+                </div>
+                </div>
+        </div>
+        <div class="col"> 
+            <div class="card m-auto bg-secondary" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="card-text">funny cats pics</p>
+                </div>
+                </div>
+        </div>
+        <div class="col"> 
+            <div class="card m-auto bg-secondary" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="card-text">funny cats pics</p>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
